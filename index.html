@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1> Hello World</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src = app.js></script>
+<h1> My Angular Project</h1>
+</head>
+<body >
+<div ng-app="myapp" ng-controller="mycontroller">
+    <label>
+        Enter Items:<input id = "lunch" type="text" ng-model = "list">
+    </label> <br> <br>
+    <div> {{message}}</div> <br> <br>
+    <div>
+        <button ng-click ="check()"> Check If Too Much </button>
+    </div>
+</div>
+</body>
 </html>
